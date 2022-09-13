@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    let temperature = prompt("Hãy nhập nhiệt độ");
+    for (temperature; temperature > 0; temperature++) {
+        while (temperature < 20 || temperature > 100) {
+            if (temperature < 20) {
+                alert("Yêu cầu tăng nhiệt độ");
+                temperature = prompt("Mời nhập lại nhiệt độ");
+            }
+            else {
+                alert("Yêu cầu giảm nhiệt độ");
+                temperature = prompt("Mời nhập lại nhiệt độ");
+            }
+        }
+        while (temperature > 20 && temperature < 100) {
+            alert("Nhiệt độ bạn nhập là: " + temperature);
+            temperature = prompt("Hãy nhập nhiệt độ");
+        }
+    }
+</script>
+
+</html>

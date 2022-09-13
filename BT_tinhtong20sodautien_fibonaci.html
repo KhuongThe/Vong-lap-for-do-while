@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let n1 = 1;
+    let n2 = 1;
+    let number_next = 0;
+    let total = 0;
+    let result = 0;
+    let N = +prompt("Hay nhap vao so nguyen duong");
+    for (i = 1; i <= N; i++) {
+        if (i == 1 || i == 2) {
+            document.write(1 + " ");
+        }
+        else {
+            number_next = n1 + n2;
+            document.write(number_next + " ");
+            n1 = n2;
+            n2 = number_next;
+        }
+        total = total + number_next;
+    }
+    result =  total + 2;
+    document.write("<br>Tổng là: " + result);
+</script>
+</html>

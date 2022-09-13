@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Game đoán số</h2>
+    <button type="button" onclick="gameplay()">Chơi luôn</button>
+    <p id="demo"></p>
+</body>
+<script>
+    function gameplay(){
+        let N = +prompt("Hãy nhập vào một khoảng số bắt đầu từ số 1 (Nhập số lớn nhất):");
+        let x = Math.floor(Math.random()*N)+1;
+        let y = +prompt("Hãy nhập số bạn dự đoán:");
+        let i=1;
+        while(y != x){
+            if(i <=3){
+            alert("Số bạn chọn chưa đúng");
+            y = +prompt("Hãy nhập số bạn dự đoán:");
+        } else {
+           alert("Bạn đã quá số lần cho phép");
+            
+        }
+            i++;
+        }
+        alert("Xin chúc mừng, bạn đã chọn chính xác");
+
+    }
+
+</script>
+</html>
